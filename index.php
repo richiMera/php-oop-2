@@ -13,8 +13,8 @@ require_once __DIR__. "/Shipping.php";
     <title>Document</title>
 </head>
 <body>
-    <?php $product2 = new Category("iPhone", 880, "Technology"); ?>
-    <?php $product3 = new Shipping("iPhone",880 ); ?>
+    <?php $product2 = new Category("iPhone", 800, "Technology"); ?>
+    <?php $product3 = new Shipping("iPhone",800 ); ?>
 
     <div class="container">
         <div class="products_container">

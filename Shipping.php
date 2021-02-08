@@ -15,8 +15,13 @@ class Shipping extends Product {
             $this->shippingCost = 0;
         } else {
             $this->shippingCost = 5;
+            
         }
-        return $this->shippingCost;
+        if ($this->shippingCost > 0) {
+            return number_format($this->shippingCost, 2);
+        } else {
+            return "Gratuita";
+        }
     }
 }
 
