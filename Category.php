@@ -12,5 +12,3 @@ class Category extends Product{
 
 }
 
-$product2 = new Category("iPhone", 880, "Technology");
-var_dump($product2);

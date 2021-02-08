@@ -16,10 +16,10 @@ class Shipping extends Product {
         } else {
             $this->shippingCost = 5;
         }
+        return $this->shippingCost;
     }
 }
 
-$product3 = new Shipping("iPhone", 35 );
-$product3-> shippingCostCalculator();
+// $product3 = new Shipping("iPhone", 35 );
+// $product3-> shippingCostCalculator();
 
-var_dump($product3);
