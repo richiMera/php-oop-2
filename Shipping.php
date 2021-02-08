@@ -10,8 +10,8 @@ class Shipping extends Product {
         $this->shippingCost = $shippingCost;
     }
 
-    public function shippingCostCalculator($price) {
-        if ($price > 40) {
+    public function shippingCostCalculator() {
+        if ($this->price > 40) {
             $this->shippingCost = 0;
         } else {
             $this->shippingCost = 5;
@@ -20,6 +20,6 @@ class Shipping extends Product {
 }
 
 $product3 = new Shipping("iPhone", 35 );
-$product3-> shippingCostCalculator(35);
+$product3-> shippingCostCalculator();
 
 var_dump($product3);
